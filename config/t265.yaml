@@ -1,0 +1,17 @@
+%YAML:1.0
+# Input-output configuration
+size: [848, 800]
+
+# Camera calibration parameter
+K: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 285.846099853516, 0.0, 418.764495849609,
+           0.0, 286.020599365234, 415.023590087891, 
+           0.0, 0.0, 1.0 ]
+D: !!opencv-matrix
+   rows: 1
+   cols: 4
+   dt: d
+   data: [-0.00907677505165339, 0.0431233085691929, -0.0392120108008385, 0.006694579962641]

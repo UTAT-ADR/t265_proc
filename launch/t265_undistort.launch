@@ -1,0 +1,11 @@
+<launch>
+
+    <arg name="param_file_path" default="$(find t265_proc)/config/t265.yaml"/>
+    <arg name="topic_name" default="/utat/fisheye1/image_raw"/>
+
+    <node pkg="t265_proc" name="utat" type="t265_undistort_node" output="screen">
+        <param name="param_file_path" value="$(arg param_file_path)" /> 
+        <param name="topic_name" value="$(arg topic_name)" /> 
+    </node>
+    
+</launch>
